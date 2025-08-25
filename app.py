@@ -1,5 +1,6 @@
 from flask import Flask, request
 from main import generateAI
+import pickle
 
 generateAI()
 ai=pickle.load(open('model.pkl','rb'))
